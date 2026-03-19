@@ -6,12 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class StudentSection extends Model
 {
-    protected $table = 'student_section';
+    protected $table = 'student_sections';
 
     protected $fillable = [
         'student_id',
         'section_id'
     ];
+     public $timestamps = false;
 
     public function student()
     {
@@ -20,6 +21,6 @@ class StudentSection extends Model
 
     public function section()
     {
-        return $this->belongsTo(Section::class);
+        return $this->belongsTo(Section::class,'section_id');
     }
 }

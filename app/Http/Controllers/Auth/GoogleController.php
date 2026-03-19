@@ -12,19 +12,19 @@ class GoogleController extends Controller
 {
     public function redirectToGoogle()
     {
-        return Socialite::driver('google')->stateless()
+        return Socialite::driver('google')
         ->redirect();
     }
 
    public function handleGoogleCallback()
 {
-    $googleUser = Socialite::driver('google') ->stateless()->user();
-    // $googleUser = Socialite::driver('google')
-    // ->stateless()
-    // ->setHttpClient(new \GuzzleHttp\Client([
-    //     'verify' => false,
-    // ]))
-    // ->user();
+    // $googleUser = Socialite::driver('google') ->stateless()->user();
+    $googleUser = Socialite::driver('google')
+    ->stateless()
+    ->setHttpClient(new \GuzzleHttp\Client([
+        'verify' => false,
+    ]))
+    ->user();
 
 
     $user = User::firstOrCreate(

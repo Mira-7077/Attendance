@@ -32,9 +32,7 @@ class SemesterController extends Controller
 
         Semester::create($request->all());
 
-        return redirect()
-            ->route('admin.semesters.index')
-            ->with('success', 'Semester created successfully');
+        return redirect()->route('admin.semesters.index')->with('success', 'Semester created successfully');
     }
 
     
@@ -69,8 +67,6 @@ class SemesterController extends Controller
 
         $semester->delete();
 
-        return redirect()
-            ->route('admin.semesters.index')
-            ->with('success', 'Semester deleted successfully');
+        return redirect()->route('admin.semesters.index')->with('success', 'Semester deleted successfully');
     }
 }

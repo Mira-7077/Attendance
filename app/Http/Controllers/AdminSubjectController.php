@@ -57,7 +57,6 @@ class AdminSubjectController extends Controller
         $subject = Subject::findOrFail($id);
         $subject->delete();
 
-        return redirect()->route('admin.subjects.index')
-                         ->with('success', 'Subject deleted successfully');
+        return redirect()->route('admin.subjects.index') ->with('success', 'Subject deleted successfully');
     }
 }

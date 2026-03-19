@@ -1,14 +1,4 @@
-{{-- 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dashboard</title>
-</head>
-<body>
-    <h1>Welcome, {{ auth()->user()->name }}</h1>
-    <p>Your role: {{ auth()->user()->role->name }}</p>
-</body>
-</html> --}}
+
 
 
 @extends('layouts.app')

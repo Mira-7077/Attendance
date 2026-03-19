@@ -18,6 +18,10 @@ return Application::configure(basePath: dirname(__DIR__))
     $middleware->alias([
         'role' => \App\Http\Middleware\RoleMiddleware::class,
     ]);
+     //prevent back button
+      $middleware->append(
+            \App\Http\Middleware\PreventBackHistory::class
+        );
 })
     
     ->withExceptions(function (Exceptions $exceptions): void {

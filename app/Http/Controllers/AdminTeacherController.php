@@ -34,7 +34,7 @@ class AdminTeacherController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role_id' => 3, // Teacher
+            'role_id' => 3, 
         ]);
 
         return redirect()->route('admin.teachers.index')

@@ -26,7 +26,9 @@
                             </a>
                         </td>
                     </tr>
-                @endforeach
+                      @endforeach
+                    <a href="/teacher/leaves">Leave Requests</a>
+            
             </tbody>
         </table>
     @else

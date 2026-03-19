@@ -11,6 +11,13 @@
     <div class="card-body">
         <form method="POST" action="{{ route('teacher.attendance.store') }}">
             @csrf
+              
+           <input type="hidden"
+          name="teacher_subject_section_id"
+          value="{{ $assignment->id }}">
+
+
+
 
             @foreach($students as $student)
                 <div class="row mb-2">
@@ -32,3 +39,29 @@
     </div>
 </div>
 @endsection
+
+
+{{-- <form method="POST" action="{{ route('teacher.attendance.store') }}">
+    @csrf
+      
+    <input type="hidden" 
+           name="teacher_subject_section_id" 
+           value="{{ $assignment->id }}">
+
+    @foreach($students as $student)
+        <div class="row mb-2">
+            <div class="col-md-6">
+                {{ $student->student->name }}
+            </div>
+            <div class="col-md-6">
+                <select name="attendance[{{ $student->student_id }}]" class="form-select">
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                    <option value="late">Late</option>
+                </select>
+            </div>
+        </div>
+    @endforeach
+
+    <button class="btn btn-success mt-3">Save Attendance</button>
+</form> --}}
