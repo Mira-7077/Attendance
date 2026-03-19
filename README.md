@@ -121,9 +121,12 @@ A **web-based attendance system** built with **Laravel**, designed for schools o
 git clone https://github.com/Mira-7077/Attendance.git
 cd attendance
 
+
+
 ## Screenshots
-![Admin Dashboard](screenshots/admondashboard.png)
+
+![Admin Dashboard](screenshots/admindashboard.png)
 ![Teacher Dashboard](screenshots/teacherdashboard.png)
 ![Student View](screenshots/studentdashboard.png)
 ![Leave Request](screenshots/leaverequest.png)
-![Student detail](screenshots/studentdetail.png)
+![Student Detail](screenshots/studentdetail.png)
