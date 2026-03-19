@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -56,4 +56,74 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
+
+
+<p align="center">
+  <a href="https://laravel.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Mira-7077/Attendance"><img src="https://img.shields.io/badge/Project-Student%20Attendance%20System-blue" alt="Project Badge"></a>
+  <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-10-red" alt="Laravel Version"></a>
+</p>
+
+# Student Attendance System
+
+A **web-based attendance system** built with **Laravel**, designed for schools or institutions to manage student attendance efficiently. The system supports multiple roles (Admin, Teacher, Student), leave requests, Google login, and Excel exports.
+
+
+## 🚀 Main Features
+
+### Teacher
+- Take daily attendance for students  
+- Approve or reject student leave requests  
+ 
+
+### Admin
+- Edit attendance records  
+- Export student attendance to Excel  
+- Can also act as a Teacher  
+- view student details like attendance percentage
+- Assign class to teacher, student to section
+- Add new student,Teacher to system
+
+### Student
+- View own attendance records  
+- Submit leave requests  
+
+### Other Features
+- Google login via **Laravel Socialite**  
+- Role-based access enforced by own  middleware (Admin / Teacher / Student)  
+- Secure authentication using Laravel’s Fortify  
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Laravel 11 
+- **Frontend:** Blade / Bootstrap 
+- **Database:** MySQL  
+- **Authentication:** Laravel Auth + Socialite (Google login)  
+- **Middleware:**  custom middleware for role-based access
+- **Export:** Laravel Excel  
+
+---
+
+## ⚙️ Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Mira-7077/Attendance.git
+cd attendance
+
+## Screenshots
+![Admin Dashboard](screenshots/admondashboard.png)
+![Teacher Dashboard](screenshots/teacherdashboard.png)
+![Student View](screenshots/studentdashboard.png)
+![Leave Request](screenshots/leaverequest.png)
+![Student detail](screenshots/studentdetail.png)
